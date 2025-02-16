@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "olauncher_calmati"
+rootProject.name = "olauncher"

@@ -1,4 +1,4 @@
-package app.olauncher_calmati.ui
+package app.olauncher.ui
 
 import android.app.admin.DevicePolicyManager
 import android.content.ComponentName
@@ -20,24 +20,24 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import app.olauncher_calmati.BuildConfig
-import app.olauncher_calmati.MainViewModel
-import app.olauncher_calmati.R
-import app.olauncher_calmati.data.Constants
-import app.olauncher_calmati.data.Prefs
-import app.olauncher_calmati.databinding.FragmentSettingsBinding
-import app.olauncher_calmati.helper.animateAlpha
-import app.olauncher_calmati.helper.appUsagePermissionGranted
-import app.olauncher_calmati.helper.getColorFromAttr
-import app.olauncher_calmati.helper.isAccessServiceEnabled
-import app.olauncher_calmati.helper.isDarkThemeOn
-import app.olauncher_calmati.helper.isOlauncherDefault
-import app.olauncher_calmati.helper.openAppInfo
-import app.olauncher_calmati.helper.openUrl
-import app.olauncher_calmati.helper.setPlainWallpaper
-import app.olauncher_calmati.helper.shareApp
-import app.olauncher_calmati.helper.showToast
-import app.olauncher_calmati.listener.DeviceAdmin
+import app.olauncher.BuildConfig
+import app.olauncher.MainViewModel
+import app.olauncher.R
+import app.olauncher.data.Constants
+import app.olauncher.data.Prefs
+import app.olauncher.databinding.FragmentSettingsBinding
+import app.olauncher.helper.animateAlpha
+import app.olauncher.helper.appUsagePermissionGranted
+import app.olauncher.helper.getColorFromAttr
+import app.olauncher.helper.isAccessServiceEnabled
+import app.olauncher.helper.isDarkThemeOn
+import app.olauncher.helper.isOlauncherDefault
+import app.olauncher.helper.openAppInfo
+import app.olauncher.helper.openUrl
+import app.olauncher.helper.setPlainWallpaper
+import app.olauncher.helper.shareApp
+import app.olauncher.helper.showToast
+import app.olauncher.listener.DeviceAdmin
 
 class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListener {
 

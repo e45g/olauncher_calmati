@@ -1,4 +1,4 @@
-package app.olauncher_calmati.ui
+package app.olauncher.ui
 
 import android.content.Context
 import android.os.UserHandle
@@ -14,13 +14,13 @@ import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import app.olauncher_calmati.R
-import app.olauncher_calmati.data.AppModel
-import app.olauncher_calmati.data.Constants
-import app.olauncher_calmati.databinding.AdapterAppDrawerBinding
-import app.olauncher_calmati.helper.hideKeyboard
-import app.olauncher_calmati.helper.isSystemApp
-import app.olauncher_calmati.helper.showKeyboard
+import app.olauncher.R
+import app.olauncher.data.AppModel
+import app.olauncher.data.Constants
+import app.olauncher.databinding.AdapterAppDrawerBinding
+import app.olauncher.helper.hideKeyboard
+import app.olauncher.helper.isSystemApp
+import app.olauncher.helper.showKeyboard
 import java.text.Normalizer
 
 class AppDrawerAdapter(
@@ -45,7 +45,6 @@ class AppDrawerAdapter(
 
     private var autoLaunch = true
     private var isBangSearch = false
-    private var isMath = false
     private val appFilter = createAppFilter()
     private val myUserHandle = android.os.Process.myUserHandle()
 
@@ -82,7 +81,6 @@ class AppDrawerAdapter(
             override fun performFiltering(charSearch: CharSequence?): FilterResults {
                 isBangSearch = charSearch?.startsWith("!") ?: false
                 autoLaunch = charSearch?.startsWith(" ")?.not() ?: true
-                isMath = charSearch?.startsWith("?")?.not() ?: true
 
                 val appFilteredList = (if (charSearch.isNullOrBlank()) appsList
                 else appsList.filter { app ->
@@ -114,7 +112,6 @@ class AppDrawerAdapter(
             if (itemCount == 1
                 && autoLaunch
                 && isBangSearch.not()
-                && isMath.not()
                 && flag == Constants.FLAG_LAUNCH_APP
                 && appFilteredList.size > 0
             ) appClickListener(appFilteredList[0])

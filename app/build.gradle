@@ -14,7 +14,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "app.olauncher_calmati"
+        applicationId "app.olauncher"
         minSdkVersion 24
         targetSdkVersion 34
         versionCode 88
@@ -39,8 +39,9 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        buildConfig true
     }
-    namespace 'app.olauncher_calmati'
+    namespace 'app.olauncher'
 }
 
 dependencies {

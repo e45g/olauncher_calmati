@@ -1,4 +1,4 @@
-package app.olauncher_calmati.ui
+package app.olauncher.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,20 +13,20 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Recycler
-import app.olauncher_calmati.MainViewModel
-import app.olauncher_calmati.R
-import app.olauncher_calmati.data.Constants
-import app.olauncher_calmati.data.Prefs
-import app.olauncher_calmati.databinding.FragmentAppDrawerBinding
-import app.olauncher_calmati.helper.hideKeyboard
-import app.olauncher_calmati.helper.isEinkDisplay
-import app.olauncher_calmati.helper.isSystemApp
-import app.olauncher_calmati.helper.openAppInfo
-import app.olauncher_calmati.helper.openSearch
-import app.olauncher_calmati.helper.openUrl
-import app.olauncher_calmati.helper.showKeyboard
-import app.olauncher_calmati.helper.showToast
-import app.olauncher_calmati.helper.uninstall
+import app.olauncher.MainViewModel
+import app.olauncher.R
+import app.olauncher.data.Constants
+import app.olauncher.data.Prefs
+import app.olauncher.databinding.FragmentAppDrawerBinding
+import app.olauncher.helper.hideKeyboard
+import app.olauncher.helper.isEinkDisplay
+import app.olauncher.helper.isSystemApp
+import app.olauncher.helper.openAppInfo
+import app.olauncher.helper.openSearch
+import app.olauncher.helper.openUrl
+import app.olauncher.helper.showKeyboard
+import app.olauncher.helper.showToast
+import app.olauncher.helper.uninstall
 
 
 class AppDrawerFragment : Fragment() {

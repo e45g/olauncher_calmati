@@ -1,4 +1,4 @@
-package app.olauncher_calmati
+package app.olauncher
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -16,21 +16,21 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import app.olauncher_calmati.data.Constants
-import app.olauncher_calmati.data.Prefs
-import app.olauncher_calmati.databinding.ActivityMainBinding
-import app.olauncher_calmati.helper.hasBeenDays
-import app.olauncher_calmati.helper.hasBeenHours
-import app.olauncher_calmati.helper.isDarkThemeOn
-import app.olauncher_calmati.helper.isDefaultLauncher
-import app.olauncher_calmati.helper.isEinkDisplay
-import app.olauncher_calmati.helper.isOlauncherDefault
-import app.olauncher_calmati.helper.isTablet
-import app.olauncher_calmati.helper.resetLauncherViaFakeActivity
-import app.olauncher_calmati.helper.setPlainWallpaper
-import app.olauncher_calmati.helper.shareApp
-import app.olauncher_calmati.helper.showLauncherSelector
-import app.olauncher_calmati.helper.showToast
+import app.olauncher.data.Constants
+import app.olauncher.data.Prefs
+import app.olauncher.databinding.ActivityMainBinding
+import app.olauncher.helper.hasBeenDays
+import app.olauncher.helper.hasBeenHours
+import app.olauncher.helper.isDarkThemeOn
+import app.olauncher.helper.isDefaultLauncher
+import app.olauncher.helper.isEinkDisplay
+import app.olauncher.helper.isOlauncherDefault
+import app.olauncher.helper.isTablet
+import app.olauncher.helper.resetLauncherViaFakeActivity
+import app.olauncher.helper.setPlainWallpaper
+import app.olauncher.helper.shareApp
+import app.olauncher.helper.showLauncherSelector
+import app.olauncher.helper.showToast
 import java.util.Calendar
 
 class MainActivity : AppCompatActivity() {

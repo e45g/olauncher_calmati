@@ -1,4 +1,4 @@
-package app.olauncher_calmati.data
+package app.olauncher.data
 
 import android.os.UserHandle
 import java.text.CollationKey

@@ -1,8 +1,8 @@
-package app.olauncher_calmati.helper
+package app.olauncher.helper
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import app.olauncher_calmati.R
+import app.olauncher.R
 
 class FakeHomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package app.olauncher_calmati.helper
+package app.olauncher.helper
 
 import android.util.Log
 import androidx.annotation.MainThread

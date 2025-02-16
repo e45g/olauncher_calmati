@@ -1,4 +1,4 @@
-package app.olauncher_calmati.helper
+package app.olauncher.helper
 
 import android.annotation.SuppressLint
 import android.app.SearchManager
@@ -35,11 +35,11 @@ import android.widget.Toast
 import androidx.annotation.AttrRes
 import androidx.annotation.ColorInt
 import androidx.appcompat.app.AppCompatDelegate
-import app.olauncher_calmati.BuildConfig
-import app.olauncher_calmati.R
-import app.olauncher_calmati.data.AppModel
-import app.olauncher_calmati.data.Constants
-import app.olauncher_calmati.data.Prefs
+import app.olauncher.BuildConfig
+import app.olauncher.R
+import app.olauncher.data.AppModel
+import app.olauncher.data.Constants
+import app.olauncher.data.Prefs
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.InputStream

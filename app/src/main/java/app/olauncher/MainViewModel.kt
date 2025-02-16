@@ -1,4 +1,4 @@
-package app.olauncher_calmati
+package app.olauncher
 
 import android.app.Application
 import android.app.Service.USAGE_STATS_SERVICE
@@ -10,15 +10,15 @@ import android.os.UserHandle
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import app.olauncher_calmati.data.AppModel
-import app.olauncher_calmati.data.Constants
-import app.olauncher_calmati.data.Constants.ONE_DAY_IN_MILLIS
-import app.olauncher_calmati.data.Prefs
-import app.olauncher_calmati.helper.SingleLiveEvent
-import app.olauncher_calmati.helper.formattedTimeSpent
-import app.olauncher_calmati.helper.getAppsList
-import app.olauncher_calmati.helper.isOlauncherDefault
-import app.olauncher_calmati.helper.showToast
+import app.olauncher.data.AppModel
+import app.olauncher.data.Constants
+import app.olauncher.data.Constants.ONE_DAY_IN_MILLIS
+import app.olauncher.data.Prefs
+import app.olauncher.helper.SingleLiveEvent
+import app.olauncher.helper.formattedTimeSpent
+import app.olauncher.helper.getAppsList
+import app.olauncher.helper.isOlauncherDefault
+import app.olauncher.helper.showToast
 import kotlinx.coroutines.launch
 import java.util.Calendar
 
