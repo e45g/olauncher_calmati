@@ -74,6 +74,7 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
         populateTextSize()
         populateAlignment()
         populateStatusBar()
+        populateBattery()
         populateDateTime()
         populateSwipeApps()
         populateSwipeDownAction()
@@ -104,6 +105,7 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
             R.id.alignmentRight -> viewModel.updateHomeAlignment(Gravity.END)
             R.id.alignmentBottom -> updateHomeBottomAlignment()
             R.id.statusBar -> toggleStatusBar()
+            R.id.showBattery -> toggleBattery()
             R.id.dateTime -> binding.dateTimeSelectLayout.visibility = View.VISIBLE
             R.id.dateTimeOn -> toggleDateTime(Constants.DateTime.ON)
             R.id.dateTimeOff -> toggleDateTime(Constants.DateTime.OFF)
@@ -183,6 +185,7 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
         binding.alignmentRight.setOnClickListener(this)
         binding.alignmentBottom.setOnClickListener(this)
         binding.statusBar.setOnClickListener(this)
+        binding.showBattery.setOnClickListener(this)
         binding.dateTime.setOnClickListener(this)
         binding.dateTimeOn.setOnClickListener(this)
         binding.dateTimeOff.setOnClickListener(this)
@@ -282,6 +285,19 @@ class SettingsFragment : Fragment(), View.OnClickListener, View.OnLongClickListe
         } else {
             hideStatusBar()
             binding.statusBar.text = getString(R.string.off)
+        }
+    }
+
+    private fun toggleBattery() {
+        prefs.showBattery = !prefs.showBattery
+        populateBattery()
+    }
+
+    private fun populateBattery() {
+        if (prefs.showBattery) {
+            binding.showBattery.text = getString(R.string.on)
+        } else {
+            binding.showBattery.text = getString(R.string.off)
         }
     }
 

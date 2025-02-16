@@ -61,6 +61,7 @@
     <string name="auto_show_keyboard">Auto show keyboard</string>
     <string name="hide">Hide</string>
     <string name="status_bar">Status bar on top</string>
+    <string name="show_battery">Displays battery on home screen</string>
     <string name="rename">Rename</string>
     <string name="show_date_time">Show date time</string>
     <string name="appearance">Appearance</string>
